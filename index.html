@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>TCC — Multigrid para Poisson</title>
+<style>
+  :root { --bg:#fff; --fg:#222; --card:#f6f6f6; --borda:#ddd; --azul:#2459a6; }
+  @media (prefers-color-scheme: dark) {
+    :root { --bg:#16181c; --fg:#e6e6e6; --card:#22262c; --borda:#3a3f47; --azul:#7fb0ff; }
+  }
+  body { font-family: system-ui, sans-serif; max-width: 860px; margin: 2rem auto;
+         padding: 0 1rem; background: var(--bg); color: var(--fg); line-height: 1.5; }
+  h1 { font-size: 1.5rem; }
+  h2 { font-size: 1.1rem; margin-top: 2rem; }
+  .cards { display: grid; gap: 1rem; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); }
+  .card { background: var(--card); border: 1px solid var(--borda); border-radius: 8px; padding: 1rem 1.2rem; }
+  .card h3 { margin: 0 0 .4rem; font-size: 1rem; }
+  .card p { margin: .2rem 0 .8rem; font-size: .92rem; }
+  a { color: var(--azul); }
+  .links a { display: block; margin: .25rem 0; word-break: break-all; }
+  small { opacity: .75; }
+</style>
+</head>
+<body>
+<h1>Método Multigrid para a equação de Poisson</h1>
+<p>Aplicações web interativas e códigos-fonte desenvolvidos para o TCC.</p>
+
+<h2>Aplicações online</h2>
+<div class="cards">
+  <div class="card">
+    <h3>Multigrid (conjunto F / execução do multigrid)</h3>
+    <p>Execute o programa e altere os parâmetros por sliders.</p>
+    <div class="links">
+      <a href="https://poisson-multigrid-lab.onrender.com/" target="_blank" rel="noopener">https://poisson-multigrid-lab.onrender.com/</a>
+    </div>
+  </div>
+  <div class="card">
+    <h3>Laboratório FMG</h3>
+    <p>Compare suavizadores e solvers (A, B, C) e a ordem de convergência.</p>
+    <div class="links">
+      <a href="https://poisson-fmg-lab.onrender.com/" target="_blank" rel="noopener">https://poisson-fmg-lab.onrender.com/</a>
+    </div>
+  </div>
+</div>
+<p><small>As aplicações ficam hospedadas no Render; se estiverem em repouso, a primeira abertura pode levar cerca de um minuto.</small></p>
+
+<h2>Repositórios</h2>
+<div class="cards">
+  <div class="card">
+    <h3>poisson-multigrid-lab</h3>
+    <div class="links">
+      <a href="https://github.com/wcjesus/poisson-multigrid-lab" target="_blank" rel="noopener">https://github.com/wcjesus/poisson-multigrid-lab</a>
+    </div>
+  </div>
+  <div class="card">
+    <h3>poisson-fmg-lab</h3>
+    <div class="links">
+      <a href="https://github.com/wcjesus/poisson-fmg-lab" target="_blank" rel="noopener">https://github.com/wcjesus/poisson-fmg-lab</a>
+    </div>
+  </div>
+</div>
+</body>
+</html>
